@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/datasets/Mental_Health_Condition_Classification" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/datasets/emotion-recognition-dataset" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/models/datasets/story_emotion_classification" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/datasets/student-mental-health-chat-data-v2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/datasets/student-mental-health-conversation" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models/datasets/student-mental-health-counseling-vn" vcs="Git" />
