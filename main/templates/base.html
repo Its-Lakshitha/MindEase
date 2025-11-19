@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}MindEase — Therapy Bot{% endblock %}</title>
+
+    <!-- SEO / Social -->
+    <meta name="description" content="{% block meta_description %}MindEase: a compassionate therapy bot that helps people communicate and cope with mental health challenges.{% endblock %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header include (logo, tagline) -->
+    {% include "includes/header.html" %}
+
+    <!-- Navbar / navigator include -->
+    {% include "includes/navigator.html" %}
+
+    <!-- Main content -->
+    <main class="flex-grow-1">
+      <div class="container py-5">
+        {% block content %}
+        <!-- Page content goes here -->
+        {% endblock %}
+      </div>
+    </main>
+
+    <!-- Footer include -->
+    {% include "includes/footer.html" %}
+
+    <!-- Bootstrap JS + Popper (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+    <!-- Site JS -->
+    <script src="{% static 'js/site.js' %}"></script>
+
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>
+
