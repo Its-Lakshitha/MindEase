@@ -1,0 +1,7 @@
+.venv
+models/datasets
+__pycache__/
+*.pyc
+logs/
+*.log
+*.lock
