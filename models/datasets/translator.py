@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 from deep_translator import GoogleTranslator
 
 dataset_path = "emotion-recognition-dataset/data/train-00000-of-00001.parquet"
-outputFile = "student_mh_counseling_100k.csv"
+outputFile = "emotion-classification/emotion-recognition-5.csv"
 sourceLang = "vi"
 targetLang = "en"
 
@@ -18,7 +18,7 @@ else:
     raise ValueError("Unsupported file format.")
 
 # Demo: use first 1000 rows
-sampled_df = df.iloc[:100000].copy()
+sampled_df = df.iloc[400000:500000].copy()
 
 # ------------------------------
 # Translation functions
